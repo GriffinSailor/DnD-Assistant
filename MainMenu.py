@@ -1,25 +1,27 @@
 import Enemies
+import Audio
 
 def PrintMenu():
-    selection = int(input("Main Menu:\n(1)Select Enemies\n(2)Music Control\n(3)End Session\n"))
+    selection = input("Main Menu:\n(1)Select Enemies\n(2)Music Control\n(3)End Session\n")
  
     # Input validation
-    if type(selection) != int:
+    if not selection.isnumeric():
         print("\nIncorrect value type\n")
         PrintMenu()
+    selection = int(selection)
     if selection > 3 or selection < 1:
-        print("\nincorrect value range\n")
+        print("\nInvalid value range\n")
         PrintMenu()
     
     # Enemies screen selected
     if selection == 1:
-        print("Enemies Selected!\n")
+        print("\n")
         Enemies.SelectEnemy()
 
     # Music screen selected
     if selection == 2:
-        print("Music Selected!\n")
-        PrintMenu()
+        print("\n")
+        Audio.SelectAudio()
 
     # End session selected
     if selection == 3:

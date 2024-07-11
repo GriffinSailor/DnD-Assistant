@@ -14,7 +14,7 @@ def SelectEnemy():
     
     # Common Enemies selected
     if selection == 1:
-        print("\nCommon Enemies Selected!\n")
+        SpawnCommon()
         SelectEnemy()
 
     # Rare Enemies selected
@@ -31,3 +31,10 @@ def SelectEnemy():
     if selection == 4:
         print("\n")
         MainMenu.PrintMenu()
+
+def SpawnCommon():
+    print("\n~Common Enemy~\n\n")
+    print("Jimmy the Weakling")
+    print("Vit: 9           Str: 9\nDex: 9           Int: 9\nWis: 9           Pop: 9")
+    print("Inventory: Common knife")
+    print("Special Ability: Shadow Bust\n\n")

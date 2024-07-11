@@ -19,12 +19,12 @@ def SelectEnemy():
 
     # Rare Enemies selected
     if selection == 2:
-        print("\nRare Enemies Selected!\n")
+        SpawnRare()
         SelectEnemy()
 
     # Epic Enemies selected
     if selection == 3:
-        print("\nEpic Enemies Selected!\n")
+        SpawnEpic()
         SelectEnemy()
 
     # Return to main menu
@@ -35,6 +35,23 @@ def SelectEnemy():
 def SpawnCommon():
     print("\n~Common Enemy~\n\n")
     print("Jimmy the Weakling")
-    print("Vit: 9           Str: 9\nDex: 9           Int: 9\nWis: 9           Pop: 9")
-    print("Inventory: Common knife")
-    print("Special Ability: Shadow Bust\n\n")
+    print("100 HP")
+    print("Str: 7           Dex: 9\nInt: 7           Cons: 7\nWis: 7           Char: 7")
+    print("Inventory: Kitchen knife")
+    print("Special Ability: Scream and Shout\n\n")
+
+def SpawnRare():
+    print("\n~Rare Enemy~\n\n")
+    print("Jimmy the Strong")
+    print("150 HP")
+    print("Str: 10           Dex: 10\nInt: 10           Cons: 10\nWis: 10           Char: 10")
+    print("Inventory: Worn down pistol")
+    print("Special Ability: Rally Allies\n\n")
+
+def SpawnEpic():
+    print("\n~Epic Enemy~\n\n")
+    print("Jimmy the Grand")
+    print("300 HP")
+    print("Str: 15           Dex: 15\nInt: 15           Cons: 15\nWis: 15           Char: 15")
+    print("Inventory: Cool Blade")
+    print("Special Ability: Call on the abyss\n\n")

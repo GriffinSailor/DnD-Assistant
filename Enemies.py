@@ -1,4 +1,5 @@
 import MainMenu
+import csv
 
 def SelectEnemy():
     selection = input("Select an Enemy to Spawn:\n(1)Common Enemy\n(2)Rare Enemy\n(3)Epic Enemy\n(4)Return to Menu\n")
@@ -32,26 +33,56 @@ def SelectEnemy():
         print("\n")
         MainMenu.PrintMenu()
 
+# CSV layout:
+# rarity,name,hp,strength,dexterity,intellect,constitution,wisdom,charisma,inventory,special abilities
+
 def SpawnCommon():
+    file = open("Enemies.csv", "r")
+    reader = csv.reader(file, delimiter = ',')
+    readerValues = []
+    for row in reader:
+        if row[0] == 'Common':
+            readerValues.append(row)
+    
+    # Printing the stats of the chosen enemy
+    chosen = readerValues[0]
     print("\n~Common Enemy~\n\n")
-    print("Jimmy the Weakling")
-    print("100 HP")
-    print("Str: 7           Dex: 9\nInt: 7           Cons: 7\nWis: 7           Char: 7")
-    print("Inventory: Kitchen knife")
-    print("Special Ability: Scream and Shout\n\n")
+    print(chosen[1])
+    print(chosen[2] + " HP")
+    print("Str: " + chosen[3] + "           Dex: " + chosen[4] + "\nInt: " + chosen[5] + "           Cons: " + chosen[6] + "\nWis: " + chosen[7] + "           Char: " + chosen[8])
+    print("Inventory: " + chosen[9])
+    print("Special Ability: " + chosen[10] + "\n\n")
 
 def SpawnRare():
-    print("\n~Rare Enemy~\n\n")
-    print("Jimmy the Strong")
-    print("150 HP")
-    print("Str: 10           Dex: 10\nInt: 10           Cons: 10\nWis: 10           Char: 10")
-    print("Inventory: Worn down pistol")
-    print("Special Ability: Rally Allies\n\n")
+    file = open("Enemies.csv", "r")
+    reader = csv.reader(file, delimiter = ',')
+    readerValues = []
+    for row in reader:
+        if row[0] == 'Rare':
+            readerValues.append(row)
+
+    # Printing the stats of the chosen enemy
+    chosen = readerValues[0]
+    print("\n~Common Enemy~\n\n")
+    print(chosen[1])
+    print(chosen[2] + " HP")
+    print("Str: " + chosen[3] + "           Dex: " + chosen[4] + "\nInt: " + chosen[5] + "           Cons: " + chosen[6] + "\nWis: " + chosen[7] + "           Char: " + chosen[8])
+    print("Inventory: " + chosen[9])
+    print("Special Ability: " + chosen[10] + "\n\n")
 
 def SpawnEpic():
-    print("\n~Epic Enemy~\n\n")
-    print("Jimmy the Grand")
-    print("300 HP")
-    print("Str: 15           Dex: 15\nInt: 15           Cons: 15\nWis: 15           Char: 15")
-    print("Inventory: Cool Blade")
-    print("Special Ability: Call on the abyss\n\n")
+    file = open("Enemies.csv", "r")
+    reader = csv.reader(file, delimiter = ',')
+    readerValues = []
+    for row in reader:
+        if row[0] == 'Epic':
+            readerValues.append(row)
+
+    # Printing the stats of the chosen enemy
+    chosen = readerValues[0]
+    print("\n~Common Enemy~\n\n")
+    print(chosen[1])
+    print(chosen[2] + " HP")
+    print("Str: " + chosen[3] + "           Dex: " + chosen[4] + "\nInt: " + chosen[5] + "           Cons: " + chosen[6] + "\nWis: " + chosen[7] + "           Char: " + chosen[8])
+    print("Inventory: " + chosen[9])
+    print("Special Ability: " + chosen[10] + "\n\n")

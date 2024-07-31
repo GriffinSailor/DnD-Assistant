@@ -25,7 +25,7 @@ def PrintMenu():
 
     # End session selected
     if selection == 3:
-        exitVer = input("\nAre you sure? Your progress will be saved. (Y/N)\n")
+        exitVer = input("\nAre you sure? (Y/N)\n")
 
         # Input Validation
         if exitVer.upper() == "Y":

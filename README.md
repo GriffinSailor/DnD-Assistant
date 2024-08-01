@@ -15,9 +15,9 @@ When the program is opened, the user is able to configure a new campaign or cont
    - ~Create menu flow for Enemies and Music~
        - ~Implement user input verification~
        - ~Implement proper spacing and informative user messages~
-   - Create Enemies Class
-       - Implement file reader
-       - Implement random enemy generating
+   - ~Create Enemies Class~
+       - ~Implement file reader~
+       - ~Implement random enemy generating~
    - Create Audio Class
        - Implement file reader
        - Implement background music player

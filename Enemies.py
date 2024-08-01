@@ -1,5 +1,6 @@
 import MainMenu
 import csv
+import random
 
 def SelectEnemy():
     selection = input("Select an Enemy to Spawn:\n(1)Common Enemy\n(2)Rare Enemy\n(3)Epic Enemy\n(4)Return to Menu\n")
@@ -44,8 +45,10 @@ def SpawnCommon():
         if row[0] == 'Common':
             readerValues.append(row)
     
+    # Choosing the enemy
+    chosen = random.choice(readerValues)
+
     # Printing the stats of the chosen enemy
-    chosen = readerValues[0]
     print("\n~Common Enemy~\n\n")
     print(chosen[1])
     print(chosen[2] + " HP")
@@ -61,9 +64,11 @@ def SpawnRare():
         if row[0] == 'Rare':
             readerValues.append(row)
 
+    # Choosing the enemy
+    chosen = random.choice(readerValues)
+
     # Printing the stats of the chosen enemy
-    chosen = readerValues[0]
-    print("\n~Common Enemy~\n\n")
+    print("\n~Rare Enemy~\n\n")
     print(chosen[1])
     print(chosen[2] + " HP")
     print("Str: " + chosen[3] + "           Dex: " + chosen[4] + "\nInt: " + chosen[5] + "           Cons: " + chosen[6] + "\nWis: " + chosen[7] + "           Char: " + chosen[8])
@@ -78,9 +83,11 @@ def SpawnEpic():
         if row[0] == 'Epic':
             readerValues.append(row)
 
+    # Choosing the enemy
+    chosen = random.choice(readerValues)
+
     # Printing the stats of the chosen enemy
-    chosen = readerValues[0]
-    print("\n~Common Enemy~\n\n")
+    print("\n~Epic Enemy~\n\n")
     print(chosen[1])
     print(chosen[2] + " HP")
     print("Str: " + chosen[3] + "           Dex: " + chosen[4] + "\nInt: " + chosen[5] + "           Cons: " + chosen[6] + "\nWis: " + chosen[7] + "           Char: " + chosen[8])

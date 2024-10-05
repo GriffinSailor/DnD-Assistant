@@ -1,10 +1,10 @@
-rarity,name,hp,strength,dexterity,intellect,constitution,wisdom,charisma,inventory,special abilities
-Common,Jimmy the Weakling,100,7,9,7,7,7,7,Kitchen knife,Scream and Shout
-Common,Timmy the PeePee,101,6,8,6,6,6,6,Undone zipper,Pee His Pants
-Common,Kimmy the Doomscroller,102,5,7,5,5,5,5,Phone cord, Charge They Phone
-Rare,Jimmy the Strong,150,10,10,10,10,10,10,Worn down pistol,Rally Allies
-Rare,Timmy the PooPoo,151,9,9,9,9,9,9,Toilet paper,Poop His Pants
-Rare,Kimmy the Heavily Medicated,152,8,8,8,8,8,8,Pill bottle,Dissassociate
-Epic,Jimmy the Grand,300,15,15,15,15,15,15,Cool Blade,Call on the Abyss
-Epic,Timmy the Unspeakable,301,14,14,14,14,14,14,Unfathomable Light,Glow
-Epic,Kimmy the Legendary,302,13,13,13,13,13,13,Ascolon,Use Stone
+rarity,name,minHP,maxHP,minStrength,maxStrength,minDexterity,maxDexterity,minIntellect,maxIntellect,minConstitution,maxConstitution,minWisdom,maxWisdom,minCharisma,maxCharisma,inventory,special abilities
+Common,Jimmy the Weakling,100,110,7,10,9,12,7,10,7,10,7,10,7,10,Kitchen knife,Scream and Shout
+Common,Timmy the PeePee,101,111,6,9,9,12,8,11,6,9,6,9,6,9,Undone zipper,Pee His Pants
+Common,Kimmy the Doomscroller,102,112,5,8,8,11,7,10,5,8,5,8,5,8,Phone cord, Charge They Phone
+Rare,Jimmy the Strong,150,175,10,15,10,15,10,15,10,15,10,15,10,15,Worn down pistol,Rally Allies
+Rare,Timmy the PooPoo,151,180,9,14,9,14,9,14,9,14,9,14,9,14,Toilet paper,Poop His Pants
+Rare,Kimmy the Heavily Medicated,152,190,8,13,8,13,8,13,8,13,8,13,8,13,Pill bottle,Dissassociate
+Epic,Jimmy the Grand,300,350,15,20,15,20,15,20,15,20,15,20,15,20,Cool Blade,Call on the Abyss
+Epic,Timmy the Unspeakable,301,375,14,19,14,19,14,19,14,19,14,19,14,19,Unfathomable Light,Glow
+Epic,Kimmy the Legendary,302,400,13,18,13,18,13,18,13,18,13,18,13,18,Ascolon,Use Stone

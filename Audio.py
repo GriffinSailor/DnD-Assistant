@@ -1,6 +1,5 @@
 import MainMenu
-from playsound import playsound
-import multiprocessing
+import simpleaudio as sa
 
 def SelectAudio():
     selection = input("Select an Audio Type:\n(1)Background\n(2)Special Event\n(3)End Music\n(4)Return to Menu\n")
@@ -17,13 +16,17 @@ def SelectAudio():
     # Background Audio selected
     if selection == 1:
         print("\nBackground Audio Selected!\n\n")
-        #playsound('Background Audio/Another One Bites The Dust.mp3', False)
 
-        # player = multiprocessing.Process(target = playsound, args = ("Background Audio/Another One Bites The Dust.mp3",))
-        # player.start()
-        # input("press ENTER to stop playback")
-        #multiprocessing.player.terminate()
-        
+
+        wave_object = sa.WaveObject.from_wave_file('C:/Users/john/OneDrive/Desktop/DnD Assistant/Background Audio/Another One Bites The Dust.wav')
+        print('playing sound using simpleaudio')
+
+        # define an object to control the play
+        play_object = wave_object.play()
+        play_object.wait_done()
+
+
+
         SelectAudio()
 
     # Special Event Audio selected
@@ -33,7 +36,6 @@ def SelectAudio():
 
     if selection == 3:
         print("\nShutting Down Audio!\n")
-        playsound('Background Audio/Silence.mp3', False)
         SelectAudio()
 
     # Return to main menu

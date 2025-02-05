@@ -77,5 +77,5 @@ def SpawnEnemy(rarity):
     print(str(health) + " HP")
     print("Str: " + str(strength) + "           Dex: " + str(dexterity) + "\nInt: " + str(intellect) + "           Cons: " + 
           str(constitution) + "\nWis: " + str(wisdom) + "           Char: " + str(charisma))
-    print("Inventory: " + chosen[9])
-    print("Special Ability: " + chosen[10] + "\n\n")
+    print("Inventory: " + chosen[16])
+    print("Special Ability: " + chosen[17] + "\n\n")
